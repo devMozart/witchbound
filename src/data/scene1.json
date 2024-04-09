@@ -1,0 +1,110 @@
+{
+  "start": {
+    "sceneImage": "village.webp",
+    "text": "As the sun dips below the horizon, you find yourself at the edge of a quaint medieval village. The last rays of light cast a warm glow over cobblestone paths and rustic cottages. The air is filled with the scent of woodsmoke and the distant echo of daily life winding down.",
+    "character": "Storyteller",
+    "characterSide": "left",
+    "choices": [],
+    "leadsTo": "narration1"
+  },
+  "narration1": {
+    "text": "Stepping into the village, a sense of curiosity washes over you. It's a place where stories linger in the air, waiting to be discovered. You can't help but feel that your arrival here might not be mere coincidence.",
+    "character": "Storyteller",
+    "characterSide": "left",
+    "choices": [],
+    "leadsTo": "narration2"
+  },
+  "narration2": {
+    "text": "A villager wearily makes his way home, the weight of the day resting on his shoulders. Across the street, a merchant busies himself with shuttering his windows and securing his wares, the fading light signaling the end of his trading hours.",
+    "character": "Storyteller",
+    "characterSide": "left",
+    "choices": [
+      {
+        "text": "Talk to the villager.",
+        "leadsTo": "villager1"
+      },
+      {
+        "text": "Talk to the merchant.",
+        "leadsTo": "dialogue2"
+      }
+    ]
+  },
+  "villager1": {
+    "text": "The villager catches your eye and nods courteously. 'Evenin', traveler. Not often we get new faces 'round these parts.'",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [
+      {
+        "text": "Ask about the village.",
+        "leadsTo": "villager2A1"
+      },
+      {
+        "text": "Ask about a place to rest.",
+        "leadsTo": "villager2B1"
+      }
+    ]
+  },
+  "villager2A1": {
+    "text": "The village seems quiet. What can you tell me about it?",
+    "character": "Player",
+    "characterSide": "left",
+    "choices": [],
+    "leadsTo": "villager2A2"
+  },
+  "villager2A2": {
+    "text": "He chuckles, a weary sound. 'Quiet, aye, that it usually is. 'Cept today. Rumors and whispers, like shadows, have been castin' a pall over Ravenwood.'",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [
+      {
+        "text": "Rumors? What kind of rumors?",
+        "leadsTo": "villager2A3"
+      }
+    ]
+  },
+  "villager2A3": {
+    "text": "'Talk of witchcraft and dark dealings,' he says, glancing about as if the very words might summon misfortune. 'It's nonsense, but fear's a powerful thing.'",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [],
+    "leadsTo": "villager_end"
+  },
+  "villager2B1": {
+    "text": "I'm here on personal business. Where might I find a room for the night?",
+    "character": "Player",
+    "characterSide": "left",
+    "choices": [],
+    "leadsTo": "villager2B2"
+  },
+  "villager2B2": {
+    "text": "He points to a cozy inn nestled between two shops. 'The Silent Stag is your best bet. Clean beds and good mead. But,' he lowers his voice, 'you'll hear no end of the trials while you sup.'",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [
+      {
+        "text": "Trials? That sounds ominous.",
+        "leadsTo": "villager2B3"
+      }
+    ]
+  },
+  "villager2B3": {
+    "text": "His eyes darken. 'Aye, three women accused of witchery. 'Tis a grim affair and has the whole village on edge.",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [],
+    "leadsTo": "villager_end"
+  },
+  "villager_end": {
+    "text": "I ought to be making my way home now. But if your curiosity's piqued, the spectacle you seek lies ahead, in the town square. Just follow the murmurs and the lantern light; they'll lead you to the heart of it all.",
+    "character": "Local Villager",
+    "characterImage": "localvillager.webp",
+    "characterSide": "right",
+    "choices": [],
+    "endOfBranch": true
+  }
+}
